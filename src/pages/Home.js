@@ -82,7 +82,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[url('./image/bg.png')] bg-cover h-[50rem]  flex flex-col flex-wrap justify-center pl-32 w-full bg-gray-200">
+      <div className="bg-[url('./image/bg.png')] bg-cover h-[50rem]  flex flex-col flex-wrap justify-center sm:pl-32 pl-20 w-full bg-gray-200">
         <div>
           <p className="text-theme mb-10 text-4xl font-light">
             Exceptional Customer Service
@@ -105,12 +105,12 @@ const Home = () => {
         <div className="flex justify-center ">
           <section>
             <p className=" text-5xl pt-10 text-center">Our Portfolio</p>
-            <p className="pt-6">
+            <p className="pt-6 text-center">
               Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed eiusmod
             </p>
           </section>
         </div>
-        <div className="flex gap-x-5 justify-center mt-16 font-light">
+        <div className="flex flex-wrap  md:gap-x-5 sm:gap-x-3 gap-x-2 justify-center mt-16 font-light">
           <button className="bg-theme border-2 border-black px-2 text-2xl text-white">
             ALL
           </button>
@@ -123,40 +123,61 @@ const Home = () => {
           <button className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl">
             PHOTOGRAPHY
           </button>
-          <button className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl">
+          <button className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl ">
             BRANDING
           </button>
         </div>
-        <div className=" flex  justify-center mt-10 ">
-          <div className="scale w-80 h-80 overflow-hidden">
-            <img src="./images/gal1.png" alt="" className="object-cover" />
+        <div className=" flex justify-center mt-10 md:px-5 sm:px-3 px-2 ">
+          <div className="scale md:w-80 md:h-80 sm:w-60 w-56 h-56 sm:h-60 overflow-hidden ">
+            <img src="./images/galery1.png" alt="" className="object-cover" />
           </div>
-          <div className="scale w-80 h-80 overflow-hidden">
+          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
             <img src="./images/gal2.png" alt="" className="object-cover" />
           </div>
-          <div className="scale w-80 h-80 overflow-hidden">
+          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
             <img src="./images/gal3.png" alt="" className="object-cover" />
           </div>
-          <div className="scale w-80 h-80 overflow-hidden">
+          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
             <img src="./images/gal4.png" alt="" className="object-cover" />
           </div>
         </div>
-        <div className="flex justify-center mt-10 pb-20">
-          <div className="scale w-80 h-80 overflow-hidden">
+        <div className="flex justify-center md:mt-10 sm:mt-5 mt-3 md:pb-20 sm:pb-10 md:px-5 sm:px-3 px-2 ">
+          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60  overflow-hidden w-56 h-56">
             <img src="./images/gal5.png" alt="" className="object-cover" />
           </div>
-          <div className="scale  w-80 h-80 overflow-hidden ">
+          <div className="scale  md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
             <img src="./images/gal6.png" alt="" className="object-cover" />
           </div>
-          <div className="scale w-80 h-80 overflow-hidden">
+          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60overflow-hidden w-56 h-56">
             <img src="./images/gal7.png" alt="" className="object-cover" />
           </div>
-          <div className="scale w-80 h-80 overflow-hidden">
+          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
             <img src="./images/gal8.png" alt="" className="object-cover" />
           </div>
         </div>
       </div>
-      {/* <div className="bg-[url('./image/back1.png')] bg-cover w-full h-96"></div> */}
+      {/* <div className="bg-[url('./image/back1.png')] bg-cover w-full text-white text-lg flex justify-evenly items-center py-32">
+        <div>
+          <img src="./images/download (7).png" alt="" className="px-10" />
+          <p className="text-4xl font-medium px-3">3,800+</p>
+          <span>Satisfied Clients</span>
+        </div>
+        <div>
+          <img src="./images/download (8).png" alt="" className="px-10" />
+          <p className="text-4xl font-medium px-3">4,510+</p>
+          <span>Projects Completed</span>
+        </div>
+        <div>
+          <img src="./images/download (9).png" alt="" className="px-10" />
+          <p className="text-4xl font-medium px-3">2,800+</p>
+          <span>Positive Feedbacks</span>
+        </div>
+        <div>
+          <img src="./images/download (10).png" alt="" className="px-10" />
+          <p className="text-4xl font-medium px-3">5,500+</p>
+          <span>Freebies Released</span>
+        </div>
+      </div> */}
     </>
   );
 };
