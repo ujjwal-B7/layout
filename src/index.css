@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-button:hover {
+.main:hover {
 scale: 1.2;
 transition-duration: 500ms;
     
+}
+.scale:hover img{
+scale: 1.2;
+
+transition-duration: 500ms;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* @media screeen (min-width:1000px) and (max-width:1100px) {
