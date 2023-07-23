@@ -4,6 +4,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const menuRef = useRef();
+  const hamRef = useRef();
   useEffect(() => {
     let handle = (e) => {
       if (!menuRef.current.contains(e.target)) {
@@ -11,8 +12,7 @@ const Navbar = () => {
       }
     };
     document.addEventListener("mousedown", handle);
-
-    // return () => document.removeEventListener("mousedown", handle);
+    return () => document.removeEventListener("mousedown", handle);
   });
   return (
     <header>
@@ -39,8 +39,8 @@ const Navbar = () => {
         <ul
           ref={menuRef}
           className={`lg:hidden absolute bg-black bg-opacity-30
-          rounded-bl-full   w-2/4 h-screen   top-0  shadow-2xl text-2xl text-center pt-20 transition-all ease-in duration-500
-          ${open ? "right-0" : "right-[-28rem]"}
+          rounded-bl-full w-2/4 h-screen top-0  shadow-2xl text-2xl text-center pt-20 transition-all ease-in duration-500
+          ${open ? "right-0" : "right-[-32rem]"}
           
           `}
         >
@@ -58,6 +58,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div
+          ref={hamRef}
           className="lg:hidden text-3xl text-white"
           onClick={() => setOpen(!open)}
         >

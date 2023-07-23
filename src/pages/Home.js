@@ -18,13 +18,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap  md:pt-40 sm:pt-20 pt-10  sm:pr-0 pr-5">
-        <div className="md:pl-40 md:pt-20 sm:pl-20 pl-10">
+      <div className="flex flex-wrap  md:pt-20 sm:pt-20 pt-10  sm:pr-0 pr-5">
+        <div className="md:pl-56 md:pt-20 sm:pl-20 pl-10">
           <img src="./images/text.png" alt="text" />
         </div>
         <div
           className="md:pt-20 md:pl-36 sm:pl-20 sm:pt-20
-        pl-10 pt-10
+        pl-10 pt-10 sm:mb-20
         "
         >
           <div className="flex mb-10">
@@ -82,7 +82,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[url('./image/bg.png')] bg-cover h-[50rem]  flex flex-col flex-wrap justify-center sm:pl-32 pl-14 w-full bg-gray-200">
+      <div className="bg-[url('./image/bg.png')] bg-cover h-[45rem]  flex flex-col flex-wrap justify-center sm:pl-32 pl-14 w-full bg-gray-200">
         <div>
           <p className="text-theme mb-10 text-4xl font-light">
             Exceptional Customer Service

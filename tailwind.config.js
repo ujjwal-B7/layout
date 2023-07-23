@@ -165,6 +165,7 @@ module.exports = {
       rose: colors.rose,
       nav: "#6038ac",
       theme: "#8352f1",
+      foot: "#232323",
     }),
     columns: {
       auto: "auto",

@@ -13,6 +13,10 @@ scale: 1.2;
 transition-duration: 500ms;
     
 }
+.logo:hover img{
+scale: 1.2;
+    
+}
 .scale:hover .open{
     display: block;
 }
