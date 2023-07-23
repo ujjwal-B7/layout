@@ -19,7 +19,7 @@ const Home = () => {
       </div>
 
       <div className="flex flex-wrap  md:pt-40 sm:pt-20 pt-10  sm:pr-0 pr-5">
-        <div className="md:pl-56 md:pt-20 sm:pl-20 pl-10">
+        <div className="md:pl-40 md:pt-20 sm:pl-20 pl-10">
           <img src="./images/text.png" alt="text" />
         </div>
         <div
@@ -82,14 +82,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[url('./image/bg.png')] bg-cover h-[50rem]  flex flex-col flex-wrap justify-center sm:pl-32 pl-20 w-full bg-gray-200">
+      <div className="bg-[url('./image/bg.png')] bg-cover h-[50rem]  flex flex-col flex-wrap justify-center sm:pl-32 pl-14 w-full bg-gray-200">
         <div>
           <p className="text-theme mb-10 text-4xl font-light">
             Exceptional Customer Service
           </p>
         </div>
         <div>
-          <p className="w-1/2 text-lg">
+          <p className="md:w-1/2 text-lg">
             Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed eiusmod
             tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minum
             veniaml.
@@ -101,7 +101,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="h-2/3">
+      <div className=" bg-gray-200">
         <div className="flex justify-center ">
           <section>
             <p className=" text-5xl pt-10 text-center">Our Portfolio</p>
@@ -110,74 +110,115 @@ const Home = () => {
             </p>
           </section>
         </div>
-        <div className="flex flex-wrap  md:gap-x-5 sm:gap-x-3 gap-x-2 justify-center mt-16 font-light">
-          <button className="bg-theme border-2 border-black px-2 text-2xl text-white">
+        <div className="flex flex-wrap  md:gap-x-5 sm:gap-x-3 gap-x-2 justify-center mt-16 font-light ">
+          <button className="bg-theme border-2 border-black px-2 text-2xl text-white mt-3">
             ALL
           </button>
-          <button className="hover:bg-theme border-2 border-black hover:text-white px-2 text-2xl">
+          <button className="hover:bg-theme border-2 border-black hover:text-white px-2 text-2xl mt-3">
             WEB
           </button>
-          <button className="hover:bg-theme border-2 border-black hover:text-white px-2 text-2xl">
+          <button className="hover:bg-theme border-2 border-black hover:text-white px-2 text-2xl mt-3">
             UI/UX
           </button>
-          <button className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl">
+          <button className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl mt-3">
             PHOTOGRAPHY
           </button>
-          <button className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl ">
+          <button className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl mt-3">
             BRANDING
           </button>
         </div>
-        <div className=" flex justify-center mt-10 md:px-5 sm:px-3 px-2 ">
-          <div className="scale md:w-80 md:h-80 sm:w-60 w-56 h-56 sm:h-60 overflow-hidden ">
-            <img src="./images/galery1.png" alt="" className="object-cover" />
+        <div className="flex justify-center md:mt-10 sm:mt-7 mt-5 px-4 gap-x-2 ">
+          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
+            <img src="./images/gal1.png" alt="" className=" mx-auto" />
+            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
+              <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+              </a>
+            </div>
           </div>
-          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
-            <img src="./images/gal2.png" alt="" className="object-cover" />
+          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
+            <img src="./images/gal2.png" alt="" className=" mx-auto" />
+            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
+              <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+              </a>
+            </div>
           </div>
-          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
-            <img src="./images/gal3.png" alt="" className="object-cover" />
+          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
+            <img src="./images/gal3.png" alt="" className=" mx-auto" />
+            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
+              <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+              </a>
+            </div>
           </div>
-          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
-            <img src="./images/gal4.png" alt="" className="object-cover" />
+          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
+            <img src="./images/gal4.png" alt="" className=" mx-auto" />
+            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
+              <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+              </a>
+            </div>
           </div>
         </div>
-        <div className="flex justify-center md:mt-10 sm:mt-5 mt-3 md:pb-20 sm:pb-10 md:px-5 sm:px-3 px-2 ">
-          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60  overflow-hidden w-56 h-56">
-            <img src="./images/gal5.png" alt="" className="object-cover" />
+        <div className="flex justify-center md:mt-10 sm:mt-7 mt-5 px-4 gap-x-2 md:pb-20 sm:pb-10 pb-7">
+          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
+            <img src="./images/gal5.png" alt="" className=" mx-auto" />
+            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
+              <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+              </a>
+            </div>
           </div>
-          <div className="scale  md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
-            <img src="./images/gal6.png" alt="" className="object-cover" />
+          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
+            <img src="./images/gal6.png" alt="" className=" mx-auto" />
+            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
+              <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+              </a>
+            </div>
           </div>
-          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60overflow-hidden w-56 h-56">
-            <img src="./images/gal7.png" alt="" className="object-cover" />
+          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
+            <img src="./images/gal7.png" alt="" className=" mx-auto" />
+            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
+              <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+              </a>
+            </div>
           </div>
-          <div className="scale md:w-80 md:h-80 sm:w-60 sm:h-60 overflow-hidden w-56 h-56">
-            <img src="./images/gal8.png" alt="" className="object-cover" />
+          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
+            <img src="./images/gal8.png" alt="" className=" mx-auto" />
+            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
+              <a href="#">
+                <ion-icon name="image-outline"></ion-icon>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      {/* <div className="bg-[url('./image/back1.png')] bg-cover w-full text-white text-lg flex justify-evenly items-center py-32">
-        <div>
+
+      <div className="bg-[url('./image/back1.png')] bg-cover w-full text-white text-lg flex flex-wrap sm:justify-evenly justify-center items-center py-32 ">
+        <div className="px-10  sm:py-5 py-12">
           <img src="./images/download (7).png" alt="" className="px-10" />
-          <p className="text-4xl font-medium px-3">3,800+</p>
+          <p className="text-4xl font-medium px-3 py-3">3,800+</p>
           <span>Satisfied Clients</span>
         </div>
-        <div>
+        <div className="px-10 sm:py-5 py-12">
           <img src="./images/download (8).png" alt="" className="px-10" />
-          <p className="text-4xl font-medium px-3">4,510+</p>
+          <p className="text-4xl font-medium px-3 py-3">4,510+</p>
           <span>Projects Completed</span>
         </div>
-        <div>
+        <div className="px-10 sm:py-5 py-12">
           <img src="./images/download (9).png" alt="" className="px-10" />
-          <p className="text-4xl font-medium px-3">2,800+</p>
+          <p className="text-4xl font-medium px-3 py-3">2,800+</p>
           <span>Positive Feedbacks</span>
         </div>
-        <div>
+        <div className="px-10 sm:py-5 py-12">
           <img src="./images/download (10).png" alt="" className="px-10" />
-          <p className="text-4xl font-medium px-3">5,500+</p>
+          <p className="text-4xl font-medium px-3 py-3">5,500+</p>
           <span>Freebies Released</span>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
