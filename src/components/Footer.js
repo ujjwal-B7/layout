@@ -8,43 +8,43 @@ const Footer = () => {
           <p className="text-4xl py-16">Contact</p>
         </div>
         <div>
-          <p>
+          <p className="text-center">
             Lorem ipsum dolor sit amet,consectrtur adipiscing elit,sed do
             eiusmod tempor
           </p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-y-10 mt-20">
-          <div className="md:px-32 px-7">
-            <p className="text-3xl">Leave a message</p>
+          <div className="md:px-32 ">
+            <p className="text-3xl  mx-2">Leave a message</p>
             <form action="" className="flex flex-col   ">
               <input
                 type="text"
                 name=""
                 id="name"
                 placeholder="Full Name"
-                className="w-96 h-14 my-5 bg-transparent border-2 border-gray-500"
+                className="sm:w-96 w-[22rem] mx-2 h-14 my-5 bg-transparent border-2 border-gray-500"
               />
               <input
                 type="email"
                 name=""
                 id="email"
                 placeholder="Email"
-                className="w-96 h-14 my-5 bg-transparent border-2 border-gray-500"
+                className="sm:w-96 w-[22rem] mx-2 h-14 my-5 bg-transparent border-2 border-gray-500"
               />
               <input
                 type="text"
                 name=""
                 id="subject"
                 placeholder="Subject"
-                className="w-96 h-14 my-5 bg-transparent border-2 border-gray-500"
+                className="sm:w-96 w-[22rem] mx-2 h-14 my-5 bg-transparent border-2 border-gray-500"
               />
               <textarea
                 name="message"
                 placeholder="Message"
-                className="w-96 h-24 my-5 bg-transparent border-2 border-gray-500"
+                className="sm:w-96 w-[22rem] h-24 my-5 mx-2 bg-transparent border-2 border-gray-500"
               ></textarea>
-              <button className="h-14 w-36 hover:opacity-90 bg-theme border border-white mb-14">
+              <button className="h-14 w-32  hover:opacity-90 bg-theme border border-white mb-14  mx-2">
                 Send
               </button>
             </form>

@@ -4,8 +4,14 @@ import Navbar from "../components/Navbar";
 const Home = () => {
   return (
     <>
-      <div className="content md:h-screen h-[42rem] bg-cover text-white w-full bg-[url('./image/background.png')]">
-        <div className="flex flex-col gap-y-24  items-center pt-72">
+      <div
+        className="content md:h-screen h-[42rem] bg-cover text-white w-full bg-[url('./image/background.png')]"
+        // data-aos="slide-up"
+      >
+        <div
+          className="flex flex-col gap-y-24  items-center pt-72"
+          data-aos="slide-up"
+        >
           <p className=" md:text-6xl sm:text-5xl text-3xl w-2/3 text-center ">
             Have an amazing business meeting
             <span className="block md:text-2xl sm:text-xl text-lg pt-5 text-center">
