@@ -1,6 +1,12 @@
 import React from "react";
 
+import { useLocation } from "react-router-dom";
 const Footer = () => {
+  const { pathname } = useLocation();
+  if (pathname === "/service") return null;
+  if (pathname === "/portfolio") return null;
+  if (pathname === "/contact") return null;
+
   return (
     <>
       <div className="bg-foot w-full text-white flex flex-col justify-center items-center ">
@@ -98,7 +104,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      ;
     </>
   );
 };
