@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+    html::-webkit-scrollbar {
+        display: none;
+      }
+
 .main:hover {
 scale: 1.2;
 transition-duration: 500ms;

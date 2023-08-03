@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -23,16 +24,16 @@ const Navbar = () => {
         <div className="text-lg">
           <ul className="lg:flex hidden  gap-x-10 ">
             <li>
-              <a href="/">HOME</a>
+              <Link to="/">HOME</Link>
             </li>
             <li>
-              <a href="/service">SERVICE</a>
+              <Link to="/service">SERVICE</Link>
             </li>
             <li>
-              <a href="/portfolio">PORTFOLIO</a>
+              <Link to="/portfolio">PORTFOLIO</Link>
             </li>
             <li>
-              <a href="/contact">CONTACT</a>
+              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>
