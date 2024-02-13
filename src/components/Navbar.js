@@ -17,7 +17,7 @@ const Navbar = () => {
   });
   return (
     <header>
-      <nav className="flex flex-wrap bg-nav justify-around items-center fixed h-24 w-full text-white z-50">
+      <nav className="flex bg-nav justify-between items-center fixed h-20 w-full text-white z-50 lg:px-40 px-7">
         <Link to="/" data-aos="fade-right">
           <img src="./images/logo.png" alt="logo" />
         </Link>

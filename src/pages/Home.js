@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-
+import { array } from "../components/Gallery";
 const Home = () => {
-  
+  const [image, setImage] = useState(array);
+
+  const sortImage = (e) => {
+    if (e === "all") {
+      setImage(array);
+    } else {
+      const res = array.filter((i) => i.category === e);
+      setImage(res);
+    }
+  };
   return (
     <>
       <div
@@ -25,7 +34,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap  md:pt-20 sm:pt-20 pt-10  sm:pr-0 pr-5">
+      <div className="flex flex-wrap  lg:pt-20  sm:pr-0 pr-5">
         <div className="md:pl-56 md:pt-20 sm:pl-20 pl-10">
           <img src="./images/text.png" alt="text" />
         </div>
@@ -36,7 +45,11 @@ const Home = () => {
         >
           <div className="flex mb-10">
             <div>
-              <img src="./images/download (2).png" alt="" className="pt-3" />
+              <img
+                src="./images/download (2).png"
+                alt=""
+                className="w-10 pt-3"
+              />
             </div>
             <div className="max-w-[40rem] text-lg ml-5">
               <p>Web Design</p>
@@ -49,7 +62,11 @@ const Home = () => {
           </div>
           <div className="flex mb-10">
             <div>
-              <img src="./images/download (4).png" alt="" className="pt-3" />
+              <img
+                src="./images/download (4).png"
+                alt=""
+                className=" w-10 pt-3"
+              />
             </div>
             <div className="max-w-[40rem] text-lg ml-5">
               <p>Web Design</p>
@@ -62,7 +79,11 @@ const Home = () => {
           </div>
           <div className="flex mb-10">
             <div>
-              <img src="./images/download (5).png" alt="" className="pt-3" />
+              <img
+                src="./images/download (5).png"
+                alt=""
+                className=" w-10 pt-3"
+              />
             </div>
             <div className="max-w-[40rem] text-lg ml-5">
               <p>Web Design</p>
@@ -75,7 +96,11 @@ const Home = () => {
           </div>
           <div className="flex mb-10">
             <div>
-              <img src="./images/download (6).png" alt="" className="pt-3" />
+              <img
+                src="./images/download (6).png"
+                alt=""
+                className=" w-10 pt-3"
+              />
             </div>
             <div className="max-w-[40rem] text-lg ml-5">
               <p>Web Design</p>
@@ -89,7 +114,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-[url('./image/bg.png')] bg-cover h-[45rem]  flex flex-col flex-wrap justify-center sm:pl-32 pl-14 w-full bg-gray-200">
+      <div className="bg-[url('./image/bg.png')] bg-cover lg:py-40 py-16 flex flex-col flex-wrap justify-center sm:pl-32 pl-14 w-full bg-gray-200">
         <div>
           <p className="text-theme mb-10 text-4xl font-light">
             Exceptional Customer Service
@@ -118,57 +143,55 @@ const Home = () => {
           </section>
         </div>
         <div className="flex flex-wrap  md:gap-x-5 sm:gap-x-3 gap-x-2 justify-center mt-16 font-light ">
-          <button className="bg-theme border-2 border-black px-2 text-2xl text-white mt-3">
+          <button
+            className="bg-theme border-2 border-black px-2 text-2xl text-white mt-3"
+            onClick={() => sortImage("all")}
+          >
             ALL
           </button>
-          <button className="hover:bg-theme border-2 border-black hover:text-white px-2 text-2xl mt-3">
+          <button
+            className="hover:bg-theme border-2 border-black hover:text-white px-2 text-2xl mt-3"
+            onClick={() => sortImage("web")}
+          >
             WEB
           </button>
-          <button className="hover:bg-theme border-2 border-black hover:text-white px-2 text-2xl mt-3">
+          <button
+            className="hover:bg-theme border-2 border-black hover:text-white px-2 text-2xl mt-3"
+            onClick={() => sortImage("ui/ux")}
+          >
             UI/UX
           </button>
-          <button className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl mt-3">
+          <button
+            className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl mt-3"
+            onClick={() => sortImage("photography")}
+          >
             PHOTOGRAPHY
           </button>
-          <button className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl mt-3">
+          <button
+            className="hover:bg-theme border-2 border-black px-2 hover:text-white text-2xl mt-3"
+            onClick={() => sortImage("branding")}
+          >
             BRANDING
           </button>
         </div>
-        <div className="flex justify-center md:mt-10 sm:mt-7 mt-5 px-4 gap-x-2 ">
-          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
-            <img src="./images/gal1.png" alt="" className=" mx-auto" />
-            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
-              <a href="#">
-                <ion-icon name="image-outline"></ion-icon>
-              </a>
+        <div className="max-w-screen-xl mx-auto grid place-items-center lg:grid-cols-4 md:grid-cols-3 px-2 grid-cols-2 md:py-10 sm:py-7 py-5 gap-6 ">
+          {image.map((img) => (
+            <div className="scale h-auto overflow-hidden relative">
+              <img
+                src={img.url}
+                alt=""
+                className=" mx-auto"
+                data-aos="zoom-in"
+              />
+              <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
+                <a href="#">
+                  <ion-icon name="image-outline"></ion-icon>
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
-            <img src="./images/gal2.png" alt="" className=" mx-auto" />
-            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
-              <a href="#">
-                <ion-icon name="image-outline"></ion-icon>
-              </a>
-            </div>
-          </div>
-          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
-            <img src="./images/gal3.png" alt="" className=" mx-auto" />
-            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
-              <a href="#">
-                <ion-icon name="image-outline"></ion-icon>
-              </a>
-            </div>
-          </div>
-          <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
-            <img src="./images/gal4.png" alt="" className=" mx-auto" />
-            <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
-              <a href="#">
-                <ion-icon name="image-outline"></ion-icon>
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
-        <div className="flex justify-center md:mt-10 sm:mt-7 mt-5 px-4 gap-x-2 md:pb-20 sm:pb-10 pb-7">
+        {/* <div className="flex justify-center md:mt-10 sm:mt-7 mt-5 px-4 gap-x-2 md:pb-20 sm:pb-10 pb-7">
           <div className="scale md:w-72 sm:w-60 w-52 h-auto overflow-hidden relative">
             <img src="./images/gal5.png" alt="" className=" mx-auto" />
             <div className="open hover:bg-theme hover:text-white hidden absolute bg-white w-14 h-14 rounded-full px-3 py-3 top-40 right-28 text-3xl">
@@ -201,7 +224,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="bg-[url('./image/back1.png')] bg-cover w-full text-white text-lg flex flex-wrap sm:justify-evenly justify-center items-center py-32 ">
