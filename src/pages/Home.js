@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="content md:h-screen h-[42rem] bg-cover text-white w-full bg-[url('./image/background.png')]"
+        className="content lg:h-screen sm:h-[55rem] h-[40rem] bg-cover text-white w-full bg-[url('./image/background.png')]"
         // data-aos="slide-up"
       >
         <div

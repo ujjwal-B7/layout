@@ -42,7 +42,6 @@ const Navbar = () => {
           className={`lg:hidden absolute bg-black bg-opacity-30
           rounded-bl-full w-2/4 h-screen top-0  shadow-2xl text-2xl text-center pt-20 transition-all ease-in duration-500
           ${open ? "right-0" : "right-[-32rem]"}
-          
           `}
         >
           <li className="py-5 lg:py-0">

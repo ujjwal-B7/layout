@@ -29,26 +29,26 @@ const Footer = () => {
                 name=""
                 id="name"
                 placeholder="Full Name"
-                className="sm:w-96 w-[22rem] mx-2 h-14 my-5 bg-transparent border-2 border-gray-500"
+                className="sm:w-96 w-80 mx-2 h-14 my-5 bg-transparent border-2 border-gray-500"
               />
               <input
                 type="email"
                 name=""
                 id="email"
                 placeholder="Email"
-                className="sm:w-96 w-[22rem] mx-2 h-14 my-5 bg-transparent border-2 border-gray-500"
+                className="sm:w-96 w-80 mx-2 h-14 my-5 bg-transparent border-2 border-gray-500"
               />
               <input
                 type="text"
                 name=""
                 id="subject"
                 placeholder="Subject"
-                className="sm:w-96 w-[22rem] mx-2 h-14 my-5 bg-transparent border-2 border-gray-500"
+                className="sm:w-96 w-80 mx-2 h-14 my-5 bg-transparent border-2 border-gray-500"
               />
               <textarea
                 name="message"
                 placeholder="Message"
-                className="sm:w-96 w-[22rem] h-24 my-5 mx-2 bg-transparent border-2 border-gray-500"
+                className="sm:w-96 w-80 h-24 my-5 mx-2 bg-transparent border-2 border-gray-500"
               ></textarea>
               <button className="h-14 w-32  hover:opacity-90 bg-theme border border-white mb-14  mx-2">
                 Send
