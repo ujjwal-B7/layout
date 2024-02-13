@@ -18,9 +18,9 @@ const Navbar = () => {
   return (
     <header>
       <nav className="flex flex-wrap bg-nav justify-around items-center fixed h-24 w-full text-white z-50">
-        <div data-aos="fade-right">
+        <Link to="/" data-aos="fade-right">
           <img src="./images/logo.png" alt="logo" />
-        </div>
+        </Link>
         <div className="text-lg">
           <ul className="lg:flex hidden  gap-x-10 ">
             <li>
