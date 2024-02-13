@@ -45,16 +45,16 @@ const Navbar = () => {
           `}
         >
           <li className="py-5 lg:py-0">
-            <Link href="/">HOME</Link>
+            <Link to="/">HOME</Link>
           </li>
           <li className="py-5 lg:py-0">
-            <Link href="/service">SERVICE</Link>
+            <Link to="/service">SERVICE</Link>
           </li>
           <li className="py-5 lg:py-0">
-            <Link href="/portfolio">PORTFOLIO</Link>
+            <Link to="/portfolio">PORTFOLIO</Link>
           </li>
           <li className="py-5 lg:py-0">
-            <Link href="/contact">CONTACT</Link>
+            <Link to="/contact">CONTACT</Link>
           </li>
         </ul>
         <div
