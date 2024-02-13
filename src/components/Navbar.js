@@ -39,21 +39,21 @@ const Navbar = () => {
         </div>
         <ul
           ref={menuRef}
-          className={`lg:hidden absolute bg-white text-theme
-          rounded-bl-md w-2/4 h-screen top-0 shadow-2xl text-2xl text-center pt-20 transition-all ease-in duration-500
+          className={`lg:hidden absolute bg-nav/90 text-white
+          rounded-bl-md w-2/4 h-screen top-0 shadow-2xl text-center pt-20 transition-all ease-in duration-500 z-50
           ${open ? "right-0" : "right-[-32rem]"}
           `}
         >
-          <li className="py-5 lg:py-0">
+          <li className="py-2 lg:py-0">
             <Link to="/">HOME</Link>
           </li>
-          <li className="py-5 lg:py-0">
+          <li className="py-2 lg:py-0">
             <Link to="/service">SERVICE</Link>
           </li>
-          <li className="py-5 lg:py-0">
+          <li className="py-2 lg:py-0">
             <Link to="/portfolio">PORTFOLIO</Link>
           </li>
-          <li className="py-5 lg:py-0">
+          <li className="py-2 lg:py-0">
             <Link to="/contact">CONTACT</Link>
           </li>
         </ul>
@@ -62,7 +62,7 @@ const Navbar = () => {
           className="lg:hidden text-3xl text-white"
           onClick={() => setOpen(!open)}
         >
-          <ion-icon name={open ? "close" : "menu"}></ion-icon>
+          <ion-icon name="menu"></ion-icon>
         </div>
       </nav>
     </header>
