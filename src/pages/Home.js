@@ -34,7 +34,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap  lg:pt-20  sm:pr-0 pr-5">
+      <div className="flex flex-wrap lg:pt-20 pt-10 sm:pr-0 pr-5">
         <div className="md:pl-56 md:pt-20 sm:pl-20 pl-10">
           <img src="./images/text.png" alt="text" />
         </div>
