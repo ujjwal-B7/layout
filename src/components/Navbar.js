@@ -39,21 +39,22 @@ const Navbar = () => {
         </div>
         <ul
           ref={menuRef}
-          className={`lg:hidden absolute bg-nav/90 text-white
-          rounded-bl-md w-2/4 h-screen top-0 shadow-2xl text-center pt-20 transition-all ease-in duration-500 z-50
-          ${open ? "right-0" : "right-[-32rem]"}
+          className={`lg:hidden absolute bg-[#e1e1e1]/90 text-nav
+          rounded-bl-md w-[60%] h-screen top-0 shadow-2xl text-center pt-20 transition-all ease-in duration-500 z-50 ${
+            open ? "right-0" : "right-[-32rem]"
+          }
           `}
         >
-          <li className="py-2 lg:py-0">
+          <li className="py-3 lg:py-0">
             <Link to="/">HOME</Link>
           </li>
-          <li className="py-2 lg:py-0">
+          <li className="py-3 lg:py-0">
             <Link to="/service">SERVICE</Link>
           </li>
-          <li className="py-2 lg:py-0">
+          <li className="py-3 lg:py-0">
             <Link to="/portfolio">PORTFOLIO</Link>
           </li>
-          <li className="py-2 lg:py-0">
+          <li className="py-3 lg:py-0">
             <Link to="/contact">CONTACT</Link>
           </li>
         </ul>
